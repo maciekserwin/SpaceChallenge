@@ -15,4 +15,9 @@ public class Rocket {
         this.chanceOfLandingCrash = chanceOfLandingCrash;
         this.currentWeight = rocketWeight;
     }
+
+    public int getRocketCost() {
+        return rocketCost;
+    }
+
 }
