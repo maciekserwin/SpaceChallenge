@@ -41,6 +41,18 @@ public class Simulation {
         rockets.add(rocket);
         return rockets;
     }
+
+    public int runSimulation(ArrayList<Rocket> rockets) {
+        int totalBudget = 0;
+        for (Rocket rocket : rockets) {
+            totalBudget += rocket.getRocketCost();
+            while (!rocket.launch() || !rocket.land()) {
+                totalBudget += rocket.getRocketCost();
+            }
+        }
+        return totalBudget;
+    }
 }
+
 
 
