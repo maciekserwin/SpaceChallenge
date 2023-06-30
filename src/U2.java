@@ -5,11 +5,13 @@ public class U2 extends Rocket {
 
     @Override
     public boolean launch() {
-        return super.launch();
+        double random = Math.random();
+        return random > getChanceOfLaunchExplosion() * (getCurrentWeight() - getRocketWeight()) / (getMaxWeight() - getRocketWeight());
     }
 
     @Override
     public boolean land() {
-        return super.land();
+        double random = Math.random();
+        return random > getChanceOfLandingCrash() * (getCurrentWeight() - getRocketWeight()) / (getMaxWeight() - getRocketWeight());
     }
 }
