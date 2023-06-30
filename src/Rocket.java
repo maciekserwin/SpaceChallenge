@@ -20,6 +20,26 @@ public class Rocket implements SpaceShip {
         return rocketCost;
     }
 
+    public int getRocketWeight() {
+        return rocketWeight;
+    }
+
+    public int getMaxWeight() {
+        return maxWeight;
+    }
+
+    public double getChanceOfLaunchExplosion() {
+        return chanceOfLaunchExplosion;
+    }
+
+    public double getChanceOfLandingCrash() {
+        return chanceOfLandingCrash;
+    }
+
+    public int getCurrentWeight() {
+        return currentWeight;
+    }
+
     @Override
     public boolean launch() {
         return true;
