@@ -1,4 +1,4 @@
-public class Rocket {
+public class Rocket implements SpaceShip {
 
    private int rocketCost;
    private int rocketWeight;
@@ -20,4 +20,23 @@ public class Rocket {
         return rocketCost;
     }
 
+    @Override
+    public boolean launch() {
+        return false;
+    }
+
+    @Override
+    public boolean land() {
+        return false;
+    }
+
+    @Override
+    public boolean canCarry(Item item) {
+        return false;
+    }
+
+    @Override
+    public int carry(Item item) {
+        return 0;
+    }
 }
