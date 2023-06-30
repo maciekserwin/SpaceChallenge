@@ -22,12 +22,12 @@ public class Rocket implements SpaceShip {
 
     @Override
     public boolean launch() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean land() {
-        return false;
+        return true;
     }
 
     @Override
