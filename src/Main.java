@@ -12,5 +12,15 @@ public class Main {
         ArrayList<Rocket> u1RocketsPhase1 = simulation.loadRockets(phase1Items, new U1());
         ArrayList<Rocket> u1RocketsPhase2 = simulation.loadRockets(phase2Items, new U1());
 
+        // Run simulation using U1 rockets and display total budget
+        int totalBudgetU1Phase1 = simulation.runSimulation(u1RocketsPhase1);
+        int totalBudgetU1Phase2 = simulation.runSimulation(u1RocketsPhase2);
+        int totalBudgetU1 = totalBudgetU1Phase1 + totalBudgetU1Phase2;
+
+        System.out.println("Total budget required for U1 rockets:");
+        System.out.println("Phase 1: $" + totalBudgetU1Phase1 + " million");
+        System.out.println("Phase 2: $" + totalBudgetU1Phase2 + " million");
+        System.out.println("Total: $" + totalBudgetU1 + " million");
+
     }
 }
