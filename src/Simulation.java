@@ -24,6 +24,23 @@ public class Simulation {
         }
         return items;
     }
+
+    private ArrayList<Rocket> loadRockets(ArrayList<Item> items, Rocket rocketType) {
+        ArrayList<Rocket> rockets = new ArrayList<>();
+        Rocket rocket = rocketType;
+
+        for (Item item : items) {
+            if (rocket.canCarry(item)) {
+                rocket.carry(item);
+            } else {
+                rockets.add(rocket);
+                rocket = rocketType;
+                rocket.carry(item);
+            }
+        }
+        rockets.add(rocket);
+        return rockets;
+    }
 }
 
 
