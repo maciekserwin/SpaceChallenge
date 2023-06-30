@@ -13,6 +13,6 @@ public class Rocket {
         this.maxWeight = maxWeight;
         this.chanceOfLaunchExplosion = chanceOfLaunchExplosion;
         this.chanceOfLandingCrash = chanceOfLandingCrash;
-        this.currentWeight = currentWeight;
+        this.currentWeight = rocketWeight;
     }
 }
