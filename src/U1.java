@@ -12,6 +12,7 @@ public class U1 extends Rocket {
 
     @Override
     public boolean land() {
-        return super.land();
+        double random = Math.random();
+        return random > getChanceOfLandingCrash() * (getCurrentWeight() - getRocketWeight()) / (getMaxWeight() - getRocketWeight());
     }
 }
