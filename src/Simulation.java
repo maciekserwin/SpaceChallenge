@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Simulation {
 
-    private ArrayList<Item> loadItems(String fileName) {
+    public ArrayList<Item> loadItems(String fileName) {
         ArrayList<Item> items = new ArrayList<>();
         try {
             File file = new File(fileName);
@@ -25,7 +25,7 @@ public class Simulation {
         return items;
     }
 
-    private ArrayList<Rocket> loadRockets(ArrayList<Item> items, Rocket rocketType) {
+    ArrayList<Rocket> loadRockets(ArrayList<Item> items, Rocket rocketType) {
         ArrayList<Rocket> rockets = new ArrayList<>();
         Rocket rocket = rocketType;
 
