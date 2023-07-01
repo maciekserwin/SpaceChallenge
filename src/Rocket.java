@@ -56,7 +56,7 @@ public class Rocket implements SpaceShip {
     }
 
     @Override
-    public int carry(Item item) {
-        return currentWeight += item.getWeight();
+    public void carry(Item item) {
+        currentWeight += item.getWeight();
     }
 }

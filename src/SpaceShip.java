@@ -6,5 +6,5 @@ public interface SpaceShip {
 
     boolean canCarry(Item item);
 
-    int carry(Item item);
+    void carry(Item item);
 }
