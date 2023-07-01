@@ -1,11 +1,11 @@
 public class Rocket implements SpaceShip {
 
-   private int rocketCost;
-   private int rocketWeight;
-   private int maxWeight;
-   private double chanceOfLaunchExplosion;
-   private double chanceOfLandingCrash;
-   private int currentWeight;
+    private int rocketCost;
+    private int rocketWeight;
+    private int maxWeight;
+    private double chanceOfLaunchExplosion;
+    private double chanceOfLandingCrash;
+    private int currentWeight;
 
     public Rocket(int rocketCost, int rocketWeight, int maxWeight, double chanceOfLaunchExplosion, double chanceOfLandingCrash, int currentWeight) {
         this.rocketCost = rocketCost;
